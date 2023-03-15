@@ -1,0 +1,57 @@
+Diferença entre DataFrame, Dataset, RDD
+
+Diferença entre where, when, filter
+
+Diferença entre ceil, round, cast
+
+Diferença entre starstwith, endswith, contains, like, e rlike
+
+Diferença entre repartition vs coalesce
+
+Diferença entre partitionBy vs bucketBy vs repartition
+
+Diferença entre toDF vs toPandas
+
+Diferença entre transformação e ação
+
+Window Functions (ranking, analytic, aggregate)
+
+Grouping Sets, Rollups, Cubes, Grouping Metadata and Pivots
+
+
+1. Reddit https://lnkd.in/dc4QjN8R
+2. Kaggle https://lnkd.in/dPKdVxxD
+3. Datahub https://lnkd.in/d-MgE4Yr
+4. Awesome Data https://lnkd.in/d24KKBD
+5. Data world https://data.world/
+6. Hugging Face https://lnkd.in/dK3msAAN
+7. Google Dataset Search https://lnkd.in/dYZeDtnp
+8. VisualData https://lnkd.in/dVXTQRS9
+9. UCI Machine Learning https://lnkd.in/djgMQWm
+10. Papers With Code https://lnkd.in/dn9GeuRR
+Os 12 principais algoritmos de aprendizado de máquina que você deve conhecer para se tornar um cientista de dados
+Principal Component Analysis (PCA)/SVD
+Least Squares and Polynomial Fitting
+Constrained Linear Regression
+K-Means Clustering
+Logistic Regression
+SVM (Support Vector Machines)
+Feed-Forward Neural Networks
+Convolutional Neural Networks (Convnets)
+Recurrent Neural Networks (RNNs)
+Conditional Random Fields (CRFs)
+Decision Trees
+TD Algorithms (Good to Have)
+
+
+for/in= para {variável que vou declarar ou declarei } em {variavel, lista , dict}
+Range : distância, quantidade. 
+While = enquanto {condição } faça tal coisa. 
+If= se {condição }
+Else = senão. 
+Elif = se/senão. 
+Class= molde, classe
+Def= função. 
+Int = inteiro
+Float= flutuante 
+String= escrito(algo sem valor)
