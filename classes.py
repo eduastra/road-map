@@ -1,23 +1,37 @@
-class bola:
+""""
+Classe Pessoa: Crie uma classe que modele uma pessoa:
 
-    def __init__(self, cor : str, circunferencia : int, material : str):
-        self.cor = cor
-        self.circunferencia = circunferencia
-        self.material = material
-    
-    def retorna_cor(self):
-        print('bola é '+self.cor)
+Atributos: nome, idade, peso e altura
+Métodos: Envelhercer, engordar, emagrecer, crescer. Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo a idade dela menor que 21 anos, ela deve crescer 0,5 cm.
+"""
+class pessoa:
+    def __init__(self, nome, idade, peso, altura):
+        self.nome = nome
+        self.idade = idade
+        self.peso = peso
+        self. altura = altura
 
-    def retorna_circunferencia(self):
-        print(str(self.circunferencia) + ' cm/s de raio')
+    def envelhecer (self):
+        anos = input('quantos anos deseja envelhecer?\n')
+        try:
+            anos = int(anos) + self.idade
+        except ValueError:
+            print('insira uma idade valida.')
+            return
+        print('sua idade atual é: '+str(anos))
 
-    def retorna_material(self):
-        print('material é ' + self.material)
+    def engordar(self):
+        peso = input('quantos kilos deseja engordar? \n')
+        try:
+            peso = int(peso) + self.peso
+        except ValueError:
+            print('insira um peso valido')
+            return
+        print('seu peso atual é '+str(peso))
 
-    def main(self):
-         self.retorna_cor()
-         self.retorna_circunferencia()
-         self.retorna_material()
+    def crescer(self):
+        if self.idade < 21 :
+            print('sua altura atual é: ' + str(int(self.altura) + int(0.5)))       
 
-jabulani = bola('branca', 18, 'tecido')
-bola.main(jabulani)
+humano = pessoa('aline', 20, 50, 155)
+pessoa.crescer(humano)
