@@ -1,0 +1,35 @@
+O protocolo BitTorrent é um protocolo peer-to-peer (P2P) que permite a distribuição eficiente de arquivos pela Internet.
+ Em vez de depender de um servidor central para distribuir um arquivo para vários clientes, o BitTorrent permite que os
+ próprios clientes atuem como fontes de dados para outros clientes. Aqui está uma visão geral de como o protocolo
+ BitTorrent funciona:
+
+Arquivo Torrent: O usuário que deseja compartilhar um arquivo cria um arquivo chamado "arquivo torrent". Este arquivo
+contém informações sobre o arquivo a ser compartilhado, como seu tamanho, a estrutura do diretório e uma lista de
+trackers.
+
+Trackers: Os trackers são servidores que ajudam na coordenação da comunicação entre os clientes. Eles mantêm uma lista
+dos clientes que estão compartilhando um determinado arquivo torrent. No entanto, os trackers não hospedam os dados
+reais do arquivo; eles apenas facilitam a conexão entre pares.
+
+Clientes BitTorrent: Os usuários que desejam baixar ou compartilhar um arquivo usam um cliente BitTorrent. Existem
+muitos clientes BitTorrent disponíveis, como uTorrent, BitTorrent, qBittorrent, Transmission, entre outros.
+
+Início do Download (Seeders e Leechers): Um usuário inicia o processo compartilhando um arquivo torrent. Esse usuário
+é chamado de "seeder". Outros usuários que desejam baixar o arquivo são chamados de "leechers". À medida que os leechers
+ baixam partes do arquivo, eles também começam a compartilhar essas partes com outros leechers.
+
+Divisão do Arquivo em Peças: O arquivo é dividido em pequenas partes (chamadas de "peças"). Cada peça é identificada
+por um hash.
+
+Priorização de Peças: Os clientes priorizam as peças que ainda não possuem. Isso permite que um cliente baixe partes que
+ estão faltando do arquivo enquanto continua compartilhando as partes que já possui.
+
+Swarm: A rede de clientes que estão compartilhando um determinado arquivo torrent é chamada de "swarm". Os clientes
+dentro do swarm colaboram para baixar e enviar peças do arquivo.
+
+Distributed Hash Table (DHT): Alguns clientes BitTorrent suportam DHT, uma tecnologia que permite que os clientes
+encontrem outros clientes sem depender exclusivamente de trackers.
+
+O BitTorrent é eficiente porque distribui a carga de download e upload entre os usuários, tornando-o escalável para
+arquivos grandes e populares. Quanto mais usuários compartilharem um arquivo, mais eficiente se torna o processo de
+download para outros usuários.
